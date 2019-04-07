@@ -62,7 +62,7 @@ var Calculadora = (function(){
                     }
                 });
             }
-            document.getElementById("display").addEventListener("DOMSubtreeModified", function(e,h){
+            document.getElementById("display").addEventListener("DOMSubtreeModified", function(e){
                 Calculadora.validarDigitosPantalla(e.srcElement.innerText);
             })
         },
